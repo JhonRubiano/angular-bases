@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.btn{
+  @apply font-semibold px-4 py-2 rounded-md transition-colors duration-500 ease-in-out;
+}
