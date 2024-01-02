@@ -1,0 +1,14 @@
+<h1>DBZ Personajes</h1>
+<hr>
+
+<main class="grid grid-cols-2 gap-x-4">
+  <aside>
+    <dbz-list
+       [CharacterList]="characters"
+       (onDeleteId)="onDeleteCharacter($event)"
+       ></dbz-list>
+  </aside>
+  <section>
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </section>
+</main>
